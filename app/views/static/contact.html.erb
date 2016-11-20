@@ -1,0 +1,126 @@
+<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+<div class="page-header"><!-- page-header -->
+  <div class="container">
+    <div class="row page-section"><!-- page section -->
+      <div class="col-md-12 page-description"><!-- page description -->
+        <h1 class="page-title">Contact</h1>
+      </div>
+      <!-- page description --> 
+      
+    </div>
+    <!-- page section --> 
+  </div>
+  <div class="page-breadcrumb">
+    <ol class="breadcrumb">
+      <li><%= link_to "Accueil", root_path %></li>
+      <li class="active">Contact</li>
+    </ol>
+  </div>
+</div>
+<!-- /.page-header -->
+<div class="main-container"><!-- main container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 content"><!-- content -->
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Prenez contact avec nous</h1>
+            <p>Adressez-vous directement à nous par le biais de ce formulaire de contact.</p>
+          </div>
+          <div class="col-md-12">
+            <form class="contact-form" id="contactus" method="post" action="contact-us.php">
+              <div class="row"> 
+                <!-- Text input-->
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <label class="control-label" for="fname">Nom<span class="required">*</span></label>
+                    <input id="fname" name="fname" type="text" placeholder="" class="form-control input-md" required>
+                  </div>
+                </div>
+                <!-- Text input-->
+                
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <label class="control-label" for="email">Email<span class="required">*</span></label>
+                    <input id="email" name="email" type="email" placeholder="" class="form-control input-md" required>
+                  </div>
+                </div>
+                <!-- Text input-->
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <label class="control-label" for="subject">Sujet</label>
+                    <input id="subject" name="subject" type="text" placeholder="" class="form-control input-md" required>
+                  </div>
+                </div>
+                
+                <!-- Textarea -->
+                
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label class="control-label" for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="7" name="message"></textarea>
+                  </div>
+                </div>
+                
+                <!-- Button -->
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-default">Envoyer</button>
+                  <span class="required pull-right">*Champs requis</span> </div>
+              </div>
+            </form>
+             
+          </div>
+        </div>
+      </div>
+      <!-- /.content -->
+      
+      <div class="col-md-offset-1 col-md-4 sidebar"><!-- sidebar -->
+        <div class="row">
+          <div class="col-md-12 widget">
+            <div class="well-bg widget-address">
+              <div class="well-inner"> <i class="fa fa-home"></i>
+                <h3>Adresse</h3>
+                <address>
+                990 Boulevard Pie-XI Sud, <br>Ville de Québec, QC G3K 1L2.
+                </address>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 widget ">
+            <div class="well-bg widget-schedule">
+              <div class="well-inner"> <i class="fa fa-clock-o"></i>
+                <h3>Heures d'ouverture</h3>
+                <ul class="listnone">
+                  <li>Lundi - Dimanche:<strong> 10am - 7pm</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 widget">
+            <div class="well-bg widget-phone">
+              <div class="well-inner"> <i class="fa fa-phone"></i>
+                <h3>Téléphone</h3>
+                <ul class="listnone">
+                  <li>418-255-2139</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.sidebar --> 
+    </div>
+  </div>
+</div>
+
+<!-- /.main container -->
+<div class="map" id="map"></div>
+<script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoibnRyaWtpIiwiYSI6IlF4aGhITWsifQ.yLUpnXVZJz0qnUZKYsYoOA';
+    var map = L.mapbox.map('map', 'mapbox.streets')
+        .setView([46.855154, -71.412279], 12);
+
+    L.marker([46.855154, -71.412279]).addTo(map); 
+    map.scrollWheelZoom.disable();
+</script>

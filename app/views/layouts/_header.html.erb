@@ -1,0 +1,42 @@
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-xs-4 navbar-brand"><%= link_to image_tag("logo.png"), root_path %></div>
+      <div class="col-md-offset-1 col-md-8">
+        <div class="row">
+          <div class="col-md-4 store-block">
+            <div class="store-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+            <div class="store-box"><span class="store-title">Horaire</span>
+              <div class="store-time">10AM - 7PM</div>
+            </div>
+          </div>
+          <div class="col-md-4 need-block">
+            <div class="need-icon"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></div>
+            <div class="need-box"><span class="help-title">Besoin d'aide?</span>
+              <div class="help-number">418-255-2139</div>
+            </div>
+          </div>
+          <div class="col-md-4 text-right">
+              <%= link_to "Devis", contact_path, class: "btn btn-default" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- header -->
+<div class="navigation">
+  <div class="container">
+  <div class="menu-button">Menu</div>
+    <div>
+      <ul data-breakpoint="800" class="flexnav">
+        <li class="active"><%= link_to "Accueil", root_path, class: "animsition-link" %></li>
+        <li><%= link_to "À propos", about_path, class: "animsition-link" %></li>
+        <li><%= link_to "Services", services_path, class: "animsition-link" %></a>
+        </li>
+        <li><%= link_to "Contact", contact_path, class: "animsition-link" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>  

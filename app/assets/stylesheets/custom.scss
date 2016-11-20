@@ -1,0 +1,226 @@
+//******** Colors **********//
+//Light blue: #2492B7
+//Light blue (Hover): #4fa7c5
+//Gray: #E0E0E0
+//Salmon: #FB816A
+//Queen blue:#406784
+//Charcoal: #39464F
+
+
+//******** Home Page **********//
+//*****************************//
+.page-header {
+    background: #39464F;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.btn-default {
+    background: #2492B7;
+}
+
+.btn-default:hover {
+    background: #4fa7c5;
+}
+
+.fa-clock-o:before {
+    color: #FB816A;
+}
+
+.fa-volume-control-phone:before {
+    color: #FB816A;
+}
+
+.navigation {
+    background: rgba(219,222,223,0.5);
+}
+
+.flexnav li a{
+    background: #EDEFEF;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    color: #39464F;;
+}
+
+.flexnav li.active a,
+.flexnav li a:hover {
+    background-color: #39464F;;
+    color: #EDEFEF;
+}
+
+.breadcrumb a:hover {
+    color: #FB816A;
+}
+
+//Small screen
+
+.menu-button .touch-button {
+    background-color: #2492B7;
+    color: #fff;
+}
+
+.menu-button {
+    border-bottom: 0px;
+    color: #375a63;
+}
+
+
+.slider-captions {
+    width: 38%;
+}
+
+.slider-title {
+  line-height: 50px;
+  font-size: 40px; 
+}
+
+.page-breadcrumb .breadcrumb > .active {
+    color: #FB816A;
+}
+
+
+/*============= Laptop 1366 ===========*/
+@media screen and (max-width: 1366px) {
+.slider-captions {position: absolute; bottom: 18%; width: 30%;}} 
+@media (max-width: 320px) {
+	.navbar-brand img{width: 80px;}
+	.header .btn{font-size: 12px; padding: 10px; display: none;}
+	.top-nav ul li { float: left; padding-left: 11px; list-style: none;}
+}
+
+/*============= media query =============*/
+@media only screen and (max-width: 768px) {
+	.header {background-color: #f9f8f4; padding-top: 10px; padding-bottom: 10px; line-height: 2.8;}
+	.header .btn{font-size: 12px; padding: 10px;}
+	.welcome-msg, .store-block, .need-block, .slider-text, .slider-captions>.btn{display: none;}
+	.navbar-brand{ }
+	.navbar-brand img{width: 120px;}
+	.slider-captions{bottom: 30%; width: 100%; text-align: center;}
+	.slider-title{font-size: 20px; line-height: 20px;}
+	.slider .slick-dots{bottom: 5px;}
+	.section-half-bg {
+    padding: 60px;}
+	/*============= home page 3 =============*/
+	.header-transparent {
+    padding-bottom: 20px;
+    position: relative;
+    background: #333;}
+    .header-transparent #navigation > ul > li > a {
+    padding: 18px 20px;
+    border: transparent;
+    color: #fff;
+}
+	.header-transparent #navigation #menu-button{margin-bottom: 10px; margin-top: 10px;}
+  .flexnav li ul{width: 100%;}
+
+}
+
+
+/* Custom sizes (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {.slider-captions{width: 60%; left: 15%; 
+  bottom: 30%;} .slider-title{font-size: 32px;
+  line-height: 34px;}
+.text-hours{display: none;}
+.slick-dots{bottom: 5px;}
+.header .btn{font-size: 12px;}
+}
+
+
+
+.well-bg {
+    background-color: #f9fcfd;
+}
+
+.section-color {
+    background-color: #f9fcfd;
+}
+
+.feature-bg {
+    background-color: #f9fcfd;
+}
+
+.tiny-footer {
+    background-color: #1f2526;
+}
+
+
+// Services section
+
+.main-container-services { margin: 0;}
+    
+.service-block .icon {
+    text-align: -webkit-center;
+}
+
+.section-primary-bg {
+    background-color: #FB816A;
+    color: #fff;
+}
+
+.section-primary-bl {
+    background-color: #406784;
+    color: #fff;
+}
+
+//******** About Page **********//
+//*****************************//
+
+.lead {
+    font-size: 18px;
+    color: #FB816A;
+    font-weight: 500;
+}
+
+.circle li:before {
+    color: #FB816A;
+}
+
+//******** Contact Page **********//
+//*****************************//
+
+.widget-address i, .widget-schedule i, .widget-phone i {
+    color: #FB816A;
+}
+
+.required{
+   color: #FB816A; 
+}
+
+//*************Footer****************8
+
+
+.footer {
+    background-color: #2f373a;
+    color: #727272;
+}
+
+.ft-social-widget a:hover{
+    background-color: #3B5998;
+}
+
+.text-highlight {
+    color: #2492B7;
+}
+
+.btn-link {
+    color: #2492B7;
+}
+
+.btn-link:hover {
+    color: #4fa7c5;
+}
+
+.feature-icon {
+    color: #FB816A;
+}
+
+.footer-widget ul li a:hover {
+    color: #2492B7;
+}
+
+.cd-top {
+    background: #EDEFEF;
+    color: black;
+}

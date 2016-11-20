@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: darri
+  api_key: '896734778227721'
+  api_secret: NdUQKcWFmTFDPJfuQJv9yITqg3Q
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: darri
+  api_key: '896734778227721'
+  api_secret: NdUQKcWFmTFDPJfuQJv9yITqg3Q
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: darri
+  api_key: '896734778227721'
+  api_secret: NdUQKcWFmTFDPJfuQJv9yITqg3Q
+  enhance_image_tag: true
+  static_image_support: false

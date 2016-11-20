@@ -1,0 +1,131 @@
+<div class="slider">
+  <div>
+    <div class="slider-img"><%= cl_image_tag("pexels-photo-196653_1_l5avt1.jpg", :gravity=>"custom", :height=>370, :width=>1265, :x=>0, :y=>0, :crop=>"crop") %></div>
+    <div class="container">
+      <div class="row">
+        <div class="slider-captions">
+          <h2 class="slider-title">Un problème avec votre appareil mobile ?</h2>
+          <p class="slider-text">Faites réparer votre téléphone cellulaire ou votre tablette par nos techniciens qui ont déjà fait leurs preuves.</p>
+        </div>
+      </div>
+    </div>
+  </div>    
+  <div>
+    <div class="slider-img"><%= cl_image_tag("navigation-car-drive-road_grujlg.jpg", :effect=>"grayscale", :height=>370, :width=>1265, :crop=>"crop") %></div>
+    <div class="container">
+      <div class="row">
+        <div class="slider-captions">
+          <h1 class="slider-title">Besoin d'un accessoire pour votre appareil mobile ?</h1>
+          <p class="slider-text">Nous avons une grande variété d’étuis, d'écrans protecteurs, de chargeurs et plusieurs autres accessoires pour tous types  d’appareils</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="slider-img"><%= cl_image_tag("pexels-photo-63690_ai0kzd.jpg", :gravity=>"auto", :height=>370, :width=>1265, :x=>0, :y=>0, :crop=>"crop") %></div>
+    <div class="container">
+      <div class="row">
+        <div class="slider-captions">
+          <h1 class="slider-title">Besoin de dévérouiller votre cellulaire ?</h1>
+          <p class="slider-text"> Nos techniciens peuvent dévérouiller rapidement votre cellulaire et ainsivous permettre de l’utiliser avec la compagnie de votre choix.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-space">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10 section-title"><!-- section title -->
+        <h1>Nos services offerts</h1>
+      </div>
+      <!-- /.section title --> 
+    </div>
+    <div class="row">
+      <div class="col-md-3 service-block"> <!-- service-block -->
+        <div class="well-bg text-center">
+          <div class="icon icon-size"><%= image_tag("service-repair.png", class: "img-responsive") %></div>
+          <h3 class="heading-title">Réparation de cellulaire</a></h3>
+          <p>Nos techniciens expérimentés prendront de votre téléphone cellulaire.</p>
+          <%= link_to "Read more", services_path, class: "btn-link" %>
+          </div>
+      </div>
+      <!-- /.service-block -->
+      <div class="col-md-3 service-block"> <!-- service-block -->
+        <div class="well-bg text-center">
+          <div class="icon icon-size"><%= image_tag("service-accessories.png", class: "img-responsive") %></div>
+          <h3 class="heading-title">Vente d'accessoires </a></h3>
+          <p>Nous avons un vaste choix d'accessoires pour tous les appareils mobiles.</p>
+          <%= link_to "Read more", services_path, class: "btn-link" %> </div>
+      </div>
+      <!-- /.service-block -->
+      <div class="col-md-3 service-block"> <!-- service-block -->
+        <div class="well-bg text-center">
+          <div class="icon icon-size"><%= image_tag("service-used.png", class: "img-responsive") %></i></div>
+          <h3 class="heading-title">Vente de cellulaires usagés</a></h3>
+          <p>Nous avons une très grande variété de cellulaires usagés à vendre.</p>
+          <%= link_to "Read more", services_path, class: "btn-link" %></div>
+      </div>
+      <!-- /.service-block -->
+      <div class="col-md-3 service-block"> <!-- service-block -->
+        <div class="well-bg text-center">
+          <div class="icon icon-size"><%= image_tag("service-unlock.png", class: "img-responsive") %></div>
+          <h3 class="heading-title">Déverouillage de cellulaires</a></h3>
+          <p>Déverrouillage de cellulaires simple et efficace, solution 100% garantie. </p>
+          <%= link_to "Read more", services_path, class: "btn-link" %></div>
+      </div>
+      <!-- /.service-block --> 
+    </div>
+  </div>
+</div>
+<div class="section-space section-color">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10">
+          <div class="text-center">
+            <h1>Pourquoi choisir RepCell ?</h1>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 feature text-center feature-bg feature-bdr">
+      <div class="feature-inner">
+        <div class="feature-icon"><i class="fa fa-wrench"></i></div>
+        <div class="feature-content">
+          <h3>Devis gratuit</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 feature text-center feature-bg feature-bdr">
+      <div class="feature-inner">
+        <div class="feature-icon"><i class="fa fa-money"></i></div>
+        <div class="feature-content">
+          <h3>Prix abordables</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 feature text-center feature-bg feature-bdr">
+      <div class="feature-inner">
+        <div class="feature-icon"><i class="fa fa-gear"></i></div>
+        <div class="feature-content">
+          <h3>Réparation rapide</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 feature text-center feature-bg feature-bdr">
+      <div class="feature-inner">
+        <div class="feature-icon"><i class="fa fa-calendar-check-o"></i></div>
+        <div class="feature-content">
+          <h3>Garantie de 90 jours</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- back to top icon --> 
+<!--<a href="#0" class="cd-top" title="Go to top">></a><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>-->

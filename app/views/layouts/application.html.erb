@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Repcell</title>
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag 'application', media: 'all' %>
+        <%= javascript_include_tag 'application' %>
+    </head>
+    <body class="animsition">
+    
+        <!-- Template Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,300,700' rel='stylesheet' type='text/css'>
+      
+        <!-- Header partial -->
+        <%= render "layouts/header" %>
+        <%= yield %>
+        <!-- Footer partial -->
+        <%= render "layouts/footer" %>
+        
+        <!-- Nav script -->
+        <script>
+            $(".flexnav").flexNav();
+        </script>  
+    </body>
+</html>
