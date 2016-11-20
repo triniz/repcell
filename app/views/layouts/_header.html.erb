@@ -17,7 +17,7 @@
             </div>
           </div>
           <div class="col-md-4 text-right">
-              <%= link_to "Devis", new_contact_path, class: "btn btn-default" %>
+              <%= link_to "Devis ", new_contact_path, class: "btn btn-default" %>
           </div>
         </div>
       </div>
@@ -30,11 +30,17 @@
   <div class="menu-button">Menu</div>
     <div>
       <ul data-breakpoint="800" class="flexnav">
-        <li class="active"><%= link_to "Accueil", root_path, class: "animsition-link" %></li>
-        <li><%= link_to "À propos", about_path, class: "animsition-link" %></li>
-        <li><%= link_to "Services", services_path, class: "animsition-link" %></a>
+        <li class="<%= current_page?(root_path) ? 'active' : 'no-active' %>">
+            <%= link_to "Accueil", root_path, class: "animsition-link" %>
         </li>
-        <li><%= link_to "Contact", new_contact_path, class: "animsition-link" %>
+        <li class="<%= current_page?(about_path) ? 'active' : 'no-active' %>">
+            <%= link_to "À propos", about_path, class: "animsition-link" %>
+        </li>
+        <li class="<%= current_page?(services_path) ? 'active' : 'no-active' %>">
+            <%= link_to "Services", services_path, class: "animsition-link" %></a>
+        </li>
+        <li class="<%= current_page?(new_contact_path) ? 'active' : 'no-active' %>">
+            <%= link_to "Contact", new_contact_path, class: "animsition-link" %>
         </li>
       </ul>
     </div>
