@@ -3,4 +3,5 @@ Rails.application.routes.draw do
     get '/contact', to: 'static#contact'
     get '/about', to: 'static#about'
     get '/services', to: 'static#services'
+    resources :contacts, only: [:new, :create]
 end

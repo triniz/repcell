@@ -1,0 +1,151 @@
+<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+<div class="page-header"><!-- page-header -->
+  <div class="container">
+    <div class="row page-section"><!-- page section -->
+      <div class="col-md-12 page-description"><!-- page description -->
+        <h1 class="page-title">Contact</h1>
+      </div>
+      <!-- page description --> 
+      
+    </div>
+    <!-- page section --> 
+  </div>
+  <div class="page-breadcrumb">
+    <ol class="breadcrumb">
+      <li><%= link_to "Accueil", root_path %></li>
+      <li class="active">Contact</li>
+    </ol>
+  </div>
+</div>
+<!-- /.page-header -->
+<div class="main-container"><!-- main container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 content"><!-- content -->
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Prenez contact avec nous</h1>
+            <p>Adressez-vous directement à nous par le biais de ce formulaire de contact.</p>
+            <% if flash[:error] %>
+              <div class="alert alert-danger"><%= flash[:error] %></div>
+            <% end %>
+          </div>
+          <div class="col-md-12">
+            <div class="contact-form" id="contactus">
+              <div class="row">
+                <%= form_for @contact do |f| %>
+                    <!-- Name input-->
+                    <div class="col-md-9">
+                      <div class="form-group">
+                        <%= f.label :name, class: 'control-label' do %>
+                            Nom<span class="required">*</span>
+                        <% end %>
+                        <%= f.text_field :name, class: "form-control input-md", required: true %>
+                      </div>
+                    </div>
+                    <!-- Name input-->
+                  
+                    <!-- Email input-->
+                    <div class="col-md-9">
+                      <div class="form-group">
+                        <%= f.label :email, class: 'control-label' do %>
+                            Email<span class="required">*</span>
+                        <% end %>
+                        <%= f.email_field :email, class: "form-control input-md", required: true %>
+                      </div>
+                    </div>
+                    <!-- Email input-->
+                    
+                    <!-- Subject input-->
+                    <div class="col-md-9">
+                      <div class="form-group">
+                        <%= f.label :subject, class: 'control-label' do %>
+                            Sujet<span class="required">*</span>
+                        <% end %>
+                        <%= f.text_field :subject, class: "form-control input-md", required: true %>
+                      </div>
+                    </div>
+                    <!-- Subject input-->
+                  
+                    <!-- Message input-->
+                    <div class="col-md-9">
+                      <div class="form-group">
+                        <%= f.label :message, "Message", class: 'control-label' %>
+                        <%= f.text_area :message, size: "10x10", class: "form-control input-md" %>
+                      </div>
+                    </div>
+                    <!-- Message input-->
+                    
+                    <div class="col-md-9">
+                      <div class="form-group hidden">
+                        <%= f.label :nickname, class: 'control-label' %>
+                        <%= f.text_field :nickname, hint: "Leave this field blank" %>
+                      </div>
+                    </div>
+                    
+                    <!-- Button -->
+                    <div class="col-md-12">
+                        <%= f.submit "Envoyer", class: 'btn btn-default' %>
+                        <div class="required pull-right">*Champs requis</div>
+                    </div>
+
+                <% end %>
+
+              </div>
+            </div>
+             
+          </div>
+        </div>
+      </div>
+      <!-- /.content -->
+      
+      <div class="col-md-offset-1 col-md-4 sidebar"><!-- sidebar -->
+        <div class="row">
+          <div class="col-md-12 widget">
+            <div class="well-bg widget-address">
+              <div class="well-inner"> <i class="fa fa-home"></i>
+                <h3>Adresse</h3>
+                <address>
+                990 Boulevard Pie-XI Sud, <br>Ville de Québec, QC G3K 1L2.
+                </address>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 widget ">
+            <div class="well-bg widget-schedule">
+              <div class="well-inner"> <i class="fa fa-clock-o"></i>
+                <h3>Heures d'ouverture</h3>
+                <ul class="listnone">
+                  <li>Lundi - Dimanche:<strong> 10am - 7pm</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 widget">
+            <div class="well-bg widget-phone">
+              <div class="well-inner"> <i class="fa fa-phone"></i>
+                <h3>Téléphone</h3>
+                <ul class="listnone">
+                  <li>418-255-2139</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.sidebar --> 
+    </div>
+  </div>
+</div>
+
+<!-- /.main container -->
+<div class="map" id="map"></div>
+<script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoibnRyaWtpIiwiYSI6IlF4aGhITWsifQ.yLUpnXVZJz0qnUZKYsYoOA';
+    var map = L.mapbox.map('map', 'mapbox.streets')
+        .setView([46.855154, -71.412279], 12);
+
+    L.marker([46.855154, -71.412279]).addTo(map); 
+    map.scrollWheelZoom.disable();
+</script>
