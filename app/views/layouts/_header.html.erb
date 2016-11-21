@@ -39,6 +39,9 @@
         <li class="<%= current_page?(services_path) ? 'active' : 'no-active' %>">
             <%= link_to "Services", services_path, class: "animsition-link" %></a>
         </li>
+        <li class="<%= current_page?(pricing_path) ? 'active' : 'no-active' %>">
+            <%= link_to "Tarifs", pricing_path, class: "animsition-link" %></a>
+        </li>
         <li class="<%= current_page?(new_contact_path) ? 'active' : 'no-active' %>">
             <%= link_to "Contact", new_contact_path, class: "animsition-link" %>
         </li>

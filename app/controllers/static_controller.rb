@@ -11,4 +11,7 @@ class StaticController < ApplicationController
     
     def services
     end
+    
+    def pricing
+    end
 end
