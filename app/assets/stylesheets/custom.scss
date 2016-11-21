@@ -3,6 +3,7 @@
 //Light blue (Hover): #4fa7c5
 //Gray: #E0E0E0
 //Salmon: #FB816A
+//Salmon (Hover): #fb9a87
 //Queen blue:#406784
 //Charcoal: #39464F
 
@@ -204,6 +205,17 @@
 .check-circle li:before {
     color: #FB816A;
 }
+
+.btn-salmon {
+    background: #FB816A;
+    color: #fff;
+}
+
+.btn-salmon:hover {
+    background: #fb9a87;
+    color: #fff;
+}
+
 //*************Footer****************8
 
 
