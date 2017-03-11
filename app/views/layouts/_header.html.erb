@@ -1,13 +1,13 @@
 <div class="header">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-xs-4 navbar-brand"><%= link_to image_tag("logo.png"), root_path %></div>
-      <div class="col-md-offset-1 col-md-8">
+      <div class="col-md-2 col-xs-4 navbar-brand"><a href="/"><img src="/assets/logo-f29408f3318b935b387d8a9b3dd39b15d2d8a6b5f5836541db99d20d2812a866.png" alt="Logo"></a></div>
+      <div class="col-md-10">
         <div class="row">
-          <div class="col-md-4 store-block">
+          <div class="col-md-6 store-block">
             <div class="store-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
             <div class="store-box"><span class="store-title">Horaire</span>
-              <div class="store-time">10AM - 7PM</div>
+              <div class="store-time">L: Fermé | M-S: 10AM - 7PM | D: 12AM - 6PM</div>
             </div>
           </div>
           <div class="col-md-4 need-block">
@@ -16,8 +16,8 @@
               <div class="help-number">418-255-2139</div>
             </div>
           </div>
-          <div class="col-md-4 text-right">
-              <%= link_to "Devis ", new_contact_path, class: "btn btn-default" %>
+          <div class="col-md-2 text-right">
+              <a class="btn btn-default" href="/contacts/new">Devis </a>
           </div>
         </div>
       </div>
